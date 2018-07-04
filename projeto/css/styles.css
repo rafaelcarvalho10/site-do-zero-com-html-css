@@ -1,3 +1,8 @@
+@import "../../css/icons.css";
+
+html, body, .box-100-height {
+    height: 100%;
+}
 #sidenav {
     background-color: #333333;
     color: #888;
@@ -80,4 +85,86 @@
 
 #sidenav .nav>li:hover>a.action {
     display: block;
+}
+
+#me li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+#content .navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#content .navbar-nav>li>.navbar-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#chat-title {
+    position: relative;
+    height: 80px;
+}
+
+#chat-title li {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: block;
+}
+
+#chat-title li>span {
+    white-space: nowrap;
+}
+
+#chat-title .title {
+    display: block;
+    font-weight: bold;
+}
+
+#chat-title li a {
+     color: #333;
+}
+
+#chat-title li a.favorite span {
+    color: #fed136;  
+    vertical-align: middle;
+}
+
+#content h5 {
+    font-weight: bold;
+}
+
+#content .datetime-separator {
+    position: relative;
+    text-align: center;
+}
+
+#content .datetime-separator h5 {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+#content .datetime-separator:before {
+    content: '';;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+} 
+
+.img-box-round img {
+    width: 80px;
+    height: 80px;
 }
